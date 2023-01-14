@@ -1,0 +1,47 @@
+{% extends 'vacancies/layouts/main.html' %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.4.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Город</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.4.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.4.image_set.first }}" alt="">
+        </div>
+
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.5.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Город</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.5.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.5.image_set.first }}" alt="">
+        </div>
+    </div>
+{% endblock %}

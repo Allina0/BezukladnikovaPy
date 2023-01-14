@@ -1,0 +1,166 @@
+{% extends 'vacancies/layouts/main.html' %}
+
+{% block content %}
+    <div class="row gy-4">
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.6.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.6.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.6.image_set.first }}" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.7.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.7.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.7.image_set.first }}" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.8.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.8.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.8.image_set.first }}" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.9.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.9.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.9.image_set.first }}" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.10.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.10.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.10.image_set.first }}" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.11.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.11.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.11.image_set.first }}" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.12.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.12.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.12.image_set.first }}" alt="">
+        </div>
+        <div class="col-12 col-sm-6">
+            <h4 class="mb-3">{{ types.13.name }}</h4>
+            <table class="table table-bordered text-center">
+            <thead>
+            <tr>
+                <th>Название</th>
+                <th>Значение</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for stat in types.13.stats_set.all %}
+                <tr>
+                <td>{{ stat.key }}</td>
+                <td>{{ stat.value }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+            </table>
+            <img src="{{ types.13.image_set.first }}" alt="">
+        </div>
+    </div>
+{% endblock %}

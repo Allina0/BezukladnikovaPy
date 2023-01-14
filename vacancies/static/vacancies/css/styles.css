@@ -1,0 +1,21 @@
+.wrapper {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    min-height: 100vh;
+}
+
+.wrapper > * {
+    min-width: 0;
+}
+
+.wrapper img {
+    max-width: 100%;
+}
+
+.table-vacancy {
+ font-size: 14px;
+}
+
+.border-rad {
+    border-rad: border-radius: 20px;
+}

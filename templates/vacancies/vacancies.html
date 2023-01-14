@@ -1,0 +1,33 @@
+{% extends 'vacancies/layouts/main.html' %}
+
+{% block content %}
+    <table class="table table-bordered table-sm table-vacancy">
+    <thead>
+    <tr>
+        <th>Название вакансии</th>
+        <th>Описание</th>
+        <th>Навыки</th>
+        <th>Компания</th>
+        <th>Регион</th>
+        <th>Оклад</th>
+        <th>Дата публикации</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in items %}
+        <tr>
+            <td>{{ item.name }}</td>
+            {% autoescape off %}
+            <td>{{ item.description|truncatechars:500 }}</td>
+            <td>{{ item.skills }}</td>
+            {% endautoescape %}
+            <td>{{ item.employer }}</td>
+            <td>{{ item.area }}</td>
+            <td>{{ item.salary }}</td>
+{#            <td>{{ item.salary }}</td>#}
+            <td>{{ item.published_at }}</td>
+        </tr>
+    {% endfor %}
+    </tbody>
+    </table>
+{% endblock %}
